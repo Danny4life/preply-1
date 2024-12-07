@@ -72,6 +72,31 @@ public class SinglyListEx {
     }
 
 
+    public void insert(int position, int value){
+        // 1 -> 4 -> 5
+        //1 -> 6 -> 4 -> 5
+
+        ListNode node = new ListNode(value);
+
+        if(position == 1){
+            node.next = head;
+            head = node;
+        }else {
+            ListNode previous = head;
+            int count = 1;
+
+            while (count < position - 1){
+                previous = previous.next;
+                count++;
+            }
+
+            ListNode current = previous.next;
+            previous.next = node;
+            node.next = current;
+        }
+    }
+
+
 
 
 
@@ -79,14 +104,14 @@ public class SinglyListEx {
     public static void main(String[] args) {
         SinglyListEx ll = new SinglyListEx();
 
-//        ll.head = new ListNode(20);
-//        ListNode second = new ListNode(10);
-//        ListNode third = new ListNode(15);
-//        ListNode fourth = new ListNode(5);
+        ll.head = new ListNode(20);
+        ListNode second = new ListNode(10);
+        ListNode third = new ListNode(15);
+        ListNode fourth = new ListNode(5);
 
-//        ll.head.next = second;
-//        second.next = third;
-//        third.next = fourth;
+        ll.head.next = second;
+        second.next = third;
+        third.next = fourth;
 
 
 //        ll.insertNodeFirst(100);
@@ -95,10 +120,11 @@ public class SinglyListEx {
 //        ll.insertNodeFirst(400);
 
 
-        ll.insertNodeAtLast(100);
-        ll.insertNodeAtLast(200);
-        ll.insertNodeAtLast(300);
+//        ll.insertNodeAtLast(100);
+//        ll.insertNodeAtLast(200);
+//        ll.insertNodeAtLast(300);
 
+        ll.insert(3, 45);
 
         ll.displayList();
 
