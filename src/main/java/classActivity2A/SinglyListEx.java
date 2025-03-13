@@ -72,32 +72,6 @@ public class SinglyListEx {
     }
 
 
-    public void insert(int position, int value){
-        // 1 -> 4 -> 5
-        //1 -> 6 -> 4 -> 5
-
-        ListNode node = new ListNode(value);
-
-        if(position == 1){
-            node.next = head;
-            head = node;
-        }else {
-            ListNode previous = head;
-            int count = 1;
-
-            while (count < position - 1){
-                previous = previous.next;
-                count++;
-            }
-
-            ListNode current = previous.next;
-            previous.next = node;
-            node.next = current;
-        }
-    }
-
-
-
 
 
 
@@ -124,7 +98,7 @@ public class SinglyListEx {
 //        ll.insertNodeAtLast(200);
 //        ll.insertNodeAtLast(300);
 
-        ll.insert(3, 45);
+
 
         ll.displayList();
 
