@@ -21,6 +21,8 @@ public class FlightBooking {
 
     }
 
+    String name = "john";
+
     // Book a ticket for passenger
     public boolean bookTicket(String passengerName, String flightNumber){
 
