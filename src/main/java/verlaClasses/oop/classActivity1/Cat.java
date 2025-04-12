@@ -1,10 +1,6 @@
 package verlaClasses.oop.classActivity1;
 
-public class Cat extends Animal{
+public class Cat{
 
-    @Override
-    void makeSound(){
-        System.out.println("Cat is meowing");
 
-    }
 }

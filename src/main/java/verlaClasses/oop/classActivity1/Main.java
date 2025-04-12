@@ -6,6 +6,6 @@ public class Main {
 
         Puppy puppy = new Puppy();
 
-        puppy.color = "red";
+
     }
 }

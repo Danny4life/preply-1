@@ -1,6 +1,6 @@
 package verlaClasses.oop.classActivity3;
 
-public class Teacher extends Person {
+public class Teacher {
 
 
 }

@@ -1,12 +1,8 @@
 package verlaClasses.oop.classActivity1;
 
-public class Dog extends Animal{
+public class Dog {
 
-    int age;
+   String name;
 
-    @Override
-    void makeSound(){
-        System.out.println("Dog is barking");
 
-    }
 }
