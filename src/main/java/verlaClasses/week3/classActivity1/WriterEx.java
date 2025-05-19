@@ -12,15 +12,17 @@ public class WriterEx {
 
         try{
             Writer wr = new FileWriter(desktopPath + "/output.csv");
-            String fileContent = "I am learning how to write to a csv file using java";
-
+            String fileContent = "I am learning how to write into a CSV File";
             wr.write(fileContent);
+
             wr.close();
 
-            System.out.println("Successfully write into a csv file");
-
+            System.out.println("Successfully write into a CSV File");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
+
+
+
 }
