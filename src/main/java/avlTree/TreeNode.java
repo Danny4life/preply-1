@@ -13,6 +13,9 @@ public class TreeNode {
         this.val = val;
         this.height = 1; // Initially, new nodes have height 1
     }
+
+
+    private int num; // modified state
 }
 
 class AVLTree{
