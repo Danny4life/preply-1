@@ -20,5 +20,29 @@ public class Main {
         System.out.println("GPA: " + gpa);
         System.out.println("Fun Fact: " + funFact);
         //System.out.println("You were born in: " + birthYear);
+
+
+
+
+
+
+
+        // Casting example
+        // Implicit casting
+        int x = 10;
+        double y = x;   // int → double
+        System.out.println(y); // 1
+
+
+        //Explicit Casting (Narrowing)
+
+        double a = 9.7;
+        int b = (int) a;   // double → int
+        System.out.println(b); // 9
+
+
+
+
+
     }
 }
