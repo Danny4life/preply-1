@@ -41,6 +41,9 @@ public class Main {
         System.out.println(b); // 9
 
 
+        System.out.println((double) 5/2);
+
+
 
 
 
